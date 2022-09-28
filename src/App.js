@@ -98,9 +98,9 @@ function App() {
         </div>
       ) : null}
 
-      <div className="btnContainer">
+      <div className="a-TagContainer">
 
-        <button className="btn1" onClick={(() => {
+        <a href="#" className="a-tag1" onClick={(() => {
           get("https://reqres.in/api/users").then((response) => setUsers1(response.data),
             setPage1(true),
             setPage2(false),
@@ -108,20 +108,22 @@ function App() {
 
           );
 
-        })}>1</button>
+        })}>1</a>
 
 
-        <button className="btn2" onClick={(() => {
-          get("https://reqres.in/api/users?page=2").then((response) => setUsers2(response.data),
-            setPage2(true),
-            setPage1(false),
-            setUsers([])
+        <a href="#" className="a-tag2"
+
+          onClick={(() => {
+            get("https://reqres.in/api/users?page=2").then((response) => setUsers2(response.data),
+              setPage2(true),
+              setPage1(false),
+              setUsers([])
 
 
 
-          );
+            );
 
-        })}>2</button>
+          })}>2</a>
 
       </div>
     </div>

@@ -45,21 +45,13 @@ body {
   font-weight: bolder;
 }
 
-.btnContainer {
-  text-align: center;
-}
+.a-TagContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 
-.btn1,
-.btn2 {
-  display: inline-block;
+  margin-top: 30px;
 
-  border: none;
-  background-color: inherit;
-
-  margin-top: 10px;
-  text-align: center;
-  display: inline-block;
-
-  cursor: pointer;
 
 }
